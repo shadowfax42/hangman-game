@@ -1,0 +1,97 @@
+Loading word list from file...
+55900 words loaded.
+Welcome to the game of Hangman!
+I am thinking of a word  that is 10 letters long
+Please guess a letter: e
+Good guess e--e-----e
+Available Letters: abcdfghijklmnopqrstuvwxyz
+**********************************************************
+Please guess a letter: v
+Oops! That letter is not in my word e--e-----e
+**********************************************************
+You have 9 guesses left
+Available Letters: abcdfghijklmnopqrstuwxyz
+Please guess a letter: s
+Good guess e--e----se
+Available Letters: abcdfghijklmnopqrtuwxyz
+**********************************************************
+Please guess a letter: p
+Good guess e--e-p--se
+Available Letters: abcdfghijklmnoqrtuwxyz
+**********************************************************
+Please guess a letter: l
+Oops! That letter is not in my word e--e-p--se
+**********************************************************
+You have 8 guesses left
+Available Letters: abcdfghijkmnoqrtuwxyz
+Please guess a letter: c
+Oops! That letter is not in my word e--e-p--se
+**********************************************************
+You have 7 guesses left
+Available Letters: abdfghijkmnoqrtuwxyz
+Please guess a letter: m
+Oops! That letter is not in my word e--e-p--se
+**********************************************************
+You have 6 guesses left
+Available Letters: abdfghijknoqrtuwxyz
+Please guess a letter: n
+Good guess en-e-p--se
+Available Letters: abdfghijkoqrtuwxyz
+**********************************************************
+Please guess a letter: t
+Good guess ente-p--se
+Available Letters: abdfghijkoqruwxyz
+**********************************************************
+Please guess a letter: r
+Good guess enterpr-se
+Available Letters: abdfghijkoquwxyz
+**********************************************************
+Please guess a letter: i
+Good guess enterprise
+Available Letters: abdfghjkoquwxyz
+**********************************************************
+Congratulations, you won!
+Your total score is: 42
+Do you want to play again? type yes or no: yes
+Loading word list from file...
+55900 words loaded.
+Welcome to the game of Hangman!
+I am thinking of a word  that is 5 letters long
+Please guess a letter: e
+Oops! That letter is not in my word -----
+**********************************************************
+You have 4 guesses left
+Available Letters: abcdfghijklmnopqrstuvwxyz
+Please guess a letter: i
+Good guess --i--
+Available Letters: abcdfghjklmnopqrstuvwxyz
+**********************************************************
+Please guess a letter: l
+Oops! That letter is not in my word --i--
+**********************************************************
+You have 3 guesses left
+Available Letters: abcdfghjkmnopqrstuvwxyz
+Please guess a letter: d
+Oops! That letter is not in my word --i--
+**********************************************************
+You have 2 guesses left
+Available Letters: abcfghjkmnopqrstuvwxyz
+Please guess a letter: s
+Good guess --i-s
+Available Letters: abcfghjkmnopqrtuvwxyz
+**********************************************************
+Please guess a letter: b
+Oops! That letter is not in my word --i-s
+**********************************************************
+You have 1 guesses left
+Available Letters: acfghjkmnopqrtuvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word --i-s
+**********************************************************
+You have 0 guesses left
+Available Letters: acfghjknopqrtuvwxyz
+GAME OVER! YOU LOST
+The secret word is:  gains
+Do you want to play again? type yes or no: no
+
+Process finished with exit code 0

@@ -1,0 +1,48 @@
+Loading word list from file...
+55900 words loaded.
+Welcome to the game of Hangman!
+I am thinking of a word  that is 7 letters long
+Please guess a letter: e
+Good guess --e--e-
+Available Letters: abcdfghijklmnopqrstuvwxyz
+**********************************************************
+Please guess a letter: b
+Oops! That letter is not in my word --e--e-
+**********************************************************
+You have 6 guesses left
+Available Letters: acdfghijklmnopqrstuvwxyz
+Please guess a letter: t
+Oops! That letter is not in my word --e--e-
+**********************************************************
+You have 5 guesses left
+Available Letters: acdfghijklmnopqrsuvwxyz
+Please guess a letter: d
+Good guess --e-ded
+Available Letters: acfghijklmnopqrsuvwxyz
+**********************************************************
+Please guess a letter: s
+Oops! That letter is not in my word --e-ded
+**********************************************************
+You have 4 guesses left
+Available Letters: acfghijklmnopqruvwxyz
+Please guess a letter: v
+Oops! That letter is not in my word --e-ded
+**********************************************************
+You have 3 guesses left
+Available Letters: acfghijklmnopqruwxyz
+Please guess a letter: l
+Good guess -le-ded
+Available Letters: acfghijkmnopqruwxyz
+**********************************************************
+Please guess a letter: a
+Good guess -leaded
+Available Letters: cfghijkmnopqruwxyz
+**********************************************************
+Please guess a letter: p
+Good guess pleaded
+Available Letters: cfghijkmnoqruwxyz
+**********************************************************
+Congratulations, you won!
+Your total score is: 15
+
+Process finished with exit code 0

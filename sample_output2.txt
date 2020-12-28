@@ -1,0 +1,56 @@
+Loading word list from file...
+55900 words loaded.
+Welcome to the game of Hangman!
+I am thinking of a word  that is 8 letters long
+Please guess a letter: e
+Good guess -e-----e
+Available Letters: abcdfghijklmnopqrstuvwxyz
+**********************************************************
+Please guess a letter: b
+Oops! That letter is not in my word -e-----e
+**********************************************************
+You have 7 guesses left
+Available Letters: acdfghijklmnopqrstuvwxyz
+Please guess a letter: t
+Good guess -e--t--e
+Available Letters: acdfghijklmnopqrsuvwxyz
+**********************************************************
+Please guess a letter: s
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 6 guesses left
+Available Letters: acdfghijklmnopqruvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 5 guesses left
+Available Letters: acdfghijkmnopqruvwxyz
+Please guess a letter: p
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 4 guesses left
+Available Letters: acdfghijkmnoqruvwxyz
+Please guess a letter: d
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 3 guesses left
+Available Letters: acfghijkmnoqruvwxyz
+Please guess a letter: h
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 2 guesses left
+Available Letters: acfgijkmnoqruvwxyz
+Please guess a letter: m
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 1 guesses left
+Available Letters: acfgijknoqruvwxyz
+Please guess a letter: n
+Oops! That letter is not in my word -e--t--e
+**********************************************************
+You have 0 guesses left
+Available Letters: acfgijkoqruvwxyz
+GAME OVER! YOU LOST
+The secret word is:  reactive
+
+Process finished with exit code 0
