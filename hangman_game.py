@@ -74,7 +74,6 @@ def get_available_letters(letters_guessed_list):
 
 
 def hangman(file):
-
 	# load the word file
 	words = load_words(file)
 
@@ -102,10 +101,10 @@ def hangman(file):
 		if user_input in chosen_word:
 			print(f'Good guess {get_guessed_word(chosen_word, letters_guessed)}')
 			print(f"Available Letters: {get_available_letters(letters_guessed)}")
-			print("**********************************************************")
+			print("-----------------------------------------------------------")
 		else:
 			print(f'Oops! That letter is not in my word {get_guessed_word(chosen_word, letters_guessed)}')
-			print("**********************************************************")
+			print("-----------------------------------------------------------")
 			guesses_remaining -= 1
 			print(f'You have {guesses_remaining} guesses left')
 			print(f"Available Letters: {get_available_letters(letters_guessed)}")
@@ -135,3 +134,8 @@ if __name__ == '__main__':
 			hangman(file_name)
 		else:
 			break
+
+# TODO: if the player wins and wants to play again, keep track of the total score
+# TODO: display a msg if the player guessed a letter that has already been guessed
+# TODO: display warnings if the player is down to 2 allowed guesses
+# TODO: display the definition of secret word at the end
