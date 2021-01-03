@@ -6,14 +6,15 @@ Status: working on improvements whenever I have a chance
 """
 import random
 import string
+from PyDictionary import PyDictionary
 
 
 # helper functions
 def load_words(file):
 	"""
-	:param file: input file with bunch of words
-	:return: a list of words
-	"""
+    :param file: input file with bunch of words
+    :return: a list of words
+    """
 	with open(file, "r") as f:
 		print("Loading word list from file...")
 		words_list = f.read().split()
@@ -23,19 +24,19 @@ def load_words(file):
 
 def choose_word(words_list):
 	"""
-	:param words_list: a list of words
-	:return: a random word from the list
-	"""
+    :param words_list: a list of words
+    :return: a random word from the list
+    """
 	chosen_word = random.choice(words_list)
 	return chosen_word
 
 
 def is_word_guessed(secret_word, letters_guessed_list):
 	"""
-	:param letters_guessed_list: a list of letters
-	:param secret_word: a string
-	:return: True if the word is guessed and False if it's not
-	"""
+    :param letters_guessed_list: a list of letters
+    :param secret_word: a string
+    :return: True if the word is guessed and False if it's not
+    """
 	answer = ''
 	for letter in secret_word:
 		if letter in letters_guessed_list:
@@ -48,11 +49,11 @@ def is_word_guessed(secret_word, letters_guessed_list):
 
 def get_guessed_word(secret_word, letters_guessed_list):
 	"""
-	:param letters_guessed_list: a list of letters
-	:param secret_word: a string
-	:return:  a string that is comprised of letters and underscores, based
-	on what letters in letters_guessed_list are in ​secret_word.
-	"""
+    :param letters_guessed_list: a list of letters
+    :param secret_word: a string
+    :return:  a string that is comprised of letters and underscores, based
+    on what letters in letters_guessed_list are in ​secret_word.
+    """
 	output_str = []
 	for index, letter in enumerate(secret_word):
 		if letter in letters_guessed_list:
@@ -64,16 +65,16 @@ def get_guessed_word(secret_word, letters_guessed_list):
 
 def get_available_letters(letters_guessed_list):
 	"""
-	:param letters_guessed_list: a list of letters
-	:return: string of letters that are not yet guessed by the user
-	"""
+    :param letters_guessed_list: a list of letters
+    :return: string of letters that are not yet guessed by the user
+    """
 	english_alphabet = string.ascii_lowercase
 
 	letters_not_guessed = ''.join([char for char in english_alphabet if char not in letters_guessed_list])
 	return letters_not_guessed
 
 
-def hangman(file):
+def play_hangman(file):
 	# load the word file
 	words = load_words(file)
 
@@ -87,7 +88,7 @@ def hangman(file):
 	letters_guessed = []
 
 	# print game welcome
-	print("Welcome to the game of Hangman!")
+	# print("Welcome to the game of Hangman!")
 	print(f'I am thinking of a word  that is {len(chosen_word)} letters long')
 
 	while True:
@@ -112,30 +113,65 @@ def hangman(file):
 		if guesses_remaining == 0:
 			print("GAME OVER! YOU LOST")
 			print("The secret word is: ", chosen_word)
+			print(chosen_word + ": ", define_word(chosen_word))
 			break
 
 		if is_word_guessed(chosen_word, letters_guessed):
 			print("Congratulations, you won!")
+			print(chosen_word + ": ", define_word(chosen_word))
 			print(f"Your total score is: {guesses_remaining * len(set(chosen_word))}")
 			break
 
 
+def define_word(secret_word):
+
+	def_dict = PyDictionary.meaning(secret_word)
+	return def_dict
+
+
 if __name__ == '__main__':
+
+	print(''' 
+		 _                                             
+	    | |                                            
+	    | |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+	    | '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+	    | | | | (_| | | | | (_| | | | | | | (_| | | | |
+	    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+	                        __/ |                      
+	                       |___/  
+			___________.._______
+			| .__________))______|
+			| | / /      ||
+			| |/ /       ||
+			| | /        ||.-''.
+			| |/         |/  _  \\
+			| |          ||  `/,|
+			| |          (\\\\`_.'
+			| |         .-`--'.
+			| |        /Y . . Y\\
+			| |       // |   | \\\\
+			| |      //  | . | \\\\
+			| |     ')   |   |   (`
+			| |          ||'||
+			| |          || ||
+			| |          || ||
+			| |          || ||
+			| |         / | | \\
+			""""""""""|_`-' `-' |"""|
+			|"|"""""""\ \       '"|"|
+			| |        \ \        | |
+			: :         \ \       : : 
+			. .          `'       . .
+''')
 
 	# input file with words to use
 	file_name = "words.txt"
 
-	# call the main function
-	hangman(file_name)
-
 	while True:
+		play_hangman(file_name)
 		user_ans = input("Do you want to play again? type yes or no: ")
-		if user_ans.lower() == "yes":
-			hangman(file_name)
-		else:
+		if user_ans.lower() == "no":
 			break
 
 # TODO: if the player wins and wants to play again, keep track of the total score
-# TODO: display a msg if the player guessed a letter that has already been guessed
-# TODO: display warnings if the player is down to 2 allowed guesses
-# TODO: display the definition of secret word at the end

@@ -1,0 +1,70 @@
+ 
+		 _                                             
+	    | |                                            
+	    | |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+	    | '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+	    | | | | (_| | | | | (_| | | | | | | (_| | | | |
+	    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+	                        __/ |                      
+	                       |___/  
+			___________.._______
+			| .__________))______|
+			| | / /      ||
+			| |/ /       ||
+			| | /        ||.-''.
+			| |/         |/  _  \
+			| |          ||  `/,|
+			| |          (\\`_.'
+			| |         .-`--'.
+			| |        /Y . . Y\
+			| |       // |   | \\
+			| |      //  | . | \\
+			| |     ')   |   |   (`
+			| |          ||'||
+			| |          || ||
+			| |          || ||
+			| |          || ||
+			| |         / | | \
+			""""""""""|_`-' `-' |"""|
+			|"|"""""""\ \       '"|"|
+			| |        \ \        | |
+			: :         \ \       : : 
+			. .          `'       . .
+
+Loading word list from file...
+55900 words loaded.
+I am thinking of a word  that is 4 letters long
+Please guess a letter: e
+Good guess --e-
+Available Letters: abcdfghijklmnopqrstuvwxyz
+-----------------------------------------------------------
+Please guess a letter: m
+Oops! That letter is not in my word --e-
+-----------------------------------------------------------
+You have 3 guesses left
+Available Letters: abcdfghijklnopqrstuvwxyz
+Please guess a letter: t
+Oops! That letter is not in my word --e-
+-----------------------------------------------------------
+You have 2 guesses left
+Available Letters: abcdfghijklnopqrsuvwxyz
+Please guess a letter: b
+Good guess b-e-
+Available Letters: acdfghijklnopqrsuvwxyz
+-----------------------------------------------------------
+Please guess a letter: i
+Oops! That letter is not in my word b-e-
+-----------------------------------------------------------
+You have 1 guesses left
+Available Letters: acdfghjklnopqrsuvwxyz
+Please guess a letter: r
+Oops! That letter is not in my word b-e-
+-----------------------------------------------------------
+You have 0 guesses left
+Available Letters: acdfghjklnopqsuvwxyz
+GAME OVER! YOU LOST
+The secret word is:  byes
+byes:  {'Noun': ['an automatic advance to the next round in a tournament without playing an opponent', 'a farewell remark']}
+Do you want to play again? type yes or no: no
+
+Process finished with exit code 0
